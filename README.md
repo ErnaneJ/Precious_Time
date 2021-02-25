@@ -10,7 +10,7 @@
 <br>
 
 <p align="center">
-  <img alt="PomoTimer" src=".github/PreciousTime.png" width="100%">
+  <img alt="PreciousTime" src=".github/PreciousTime.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -25,7 +25,7 @@ O Precious Time foi desenvolvido com as seguintes tecnologias:
 
 O Precious Time é um relógio interativo de execução em tempo real feito para quem gosta de organizar suas tarefas diárias em tópicos de execução e bater suas metas todos os dias. 
 
-Clique <a href="https://ernanej.github.io/PomoTimer/index.html" target="_blank">aqui</a> para acessá-lo.
+Clique <a href="https://ernanej.github.io/Precious_Time/index.html" target="_blank">aqui</a> para acessá-lo.
 
 
 
