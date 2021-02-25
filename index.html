@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script href="assets/js/script.js"></script>
+
+    <title>Clock</title>
+</head>
+
+<body onload="DOM.phrase();">
+    <p id="mensage"><span> ▷</span></p>
+    <main class="app">
+        <div class="container">
+            <div class="hour-mensage">
+                <p id="hour">00:00:00</p>
+                <p id="date"></p>
+                <input id="name" class="input name" placeholder="Qual o seu nome?" type="text">
+            </div>
+            <div class="addtask">
+                <a class="add" onclick="tasks.addtask()">+</a>
+                <input id="addt" class="input" placeholder="Adicione uma tarefa!" type="text">
+            </div>
+            <form id="taskContainer" action="">
+
+            </form>
+            <p id="clear" onclick="DOM.Fullsplice()">Limpar Tarefas</p>
+        </div>
+    </main>
+    <footer>
+
+        <p id="phrase" class="phrase"></p>
+        <p id="author" class="phrase"></p><br>
+        <p class="footer">Feito com ❤ by<a href="https://github.com/ErnaneJ">Ernane Ferreira</a>.</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
