@@ -83,14 +83,15 @@ const Tasks = {
 
 const Enter = {
     pressEnter(e) {
+        if (typeof localStorage.name != "undefined") { getData.updateData() }
         document.addEventListener('keypress', function(e) {
             if (e.key == 'Enter') {
                 e.preventDefault();
                 Tasks.add();
-                let aux = document.getElementById('name').value;
-                if (aux != "") {
+                if (typeof localStorage.name == 'undefined') {
                     getData.updateData();
                 }
+
             }
         }, false);
     }
@@ -98,10 +99,9 @@ const Enter = {
 
 const getData = {
     name: "",
-    hour: 0,
 
     updateData() {
-        getData.name = document.getElementById('name').value;
+        getData.name = localStorage.name;
         document.getElementById('name').style.display = 'none';
         document.getElementById("mensage").style.opacity = "1";
     },
