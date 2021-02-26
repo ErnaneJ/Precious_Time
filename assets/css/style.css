@@ -258,7 +258,24 @@ footer {
     justify-content: center;
     color: white;
     opacity: 0.5;
-    transition: all .3s;
+    transition: all 0.3s;
+}
+
+#author {
+    opacity: 0;
+}
+
+#phrase {
+    transform: translateY(20px);
+    transition: all 0.5s;
+}
+
+footer:hover #phrase {
+    transform: translateY(0px);
+}
+
+footer:hover #author {
+    opacity: 1;
 }
 
 .footer a {

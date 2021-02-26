@@ -3,7 +3,7 @@ const motivational = {
 
     author: ['Arthur Ashe', 'Roberto Shinyashiki', 'Frank Tibolt', 'Confúcio', 'Pablo Picasso', 'Platão', 'Aristóteles', 'Ellen Degeneres', 'Immanuel Kant', 'Lou Holtz', 'Paulo Coelho', 'Charles Swindoll', 'Helen Keller', 'Malala Yousafzai', 'Dalai Lama', 'Thomas Edison', 'Wayne Dyer', 'Ayn Rand', 'Mario Quintana', 'Augusto Cury', 'Charles Chaplin', 'Aldous Huxley', 'Margaret Thatcher', 'Buda', 'Clarice Lispector', 'Albert Einstein', 'Beverly Sills', 'Paulo Coelho', 'Vincent van Gogh', 'Georges Bernanos', 'Cecília Meireles', 'Leonardo da Vinci', 'Sócrates', 'Khalil Gibran', 'Nelson Mandela', 'Bráulio Bessa', 'Sócrates', 'Sigmund Freud', 'Mario Quintana', 'Bernardinho', 'F. Scott Fitzgerald']
 }
-let tasks = []
+tasks = []
 const Time = {
     puttingZero(value) {
         if (value < 10) {
@@ -152,7 +152,7 @@ const DOM = {
         tasks.splice(index, 1);
         DOM.clearApp();
         App.reload();
-        tasks.length == 0 ? document.querySelector("#clear").style.display = "none" : document.querySelector("#clear").style.display = "inline"
+        tasks.length == 0 ? document.querySelector("#clear").style.display = "none" : document.querySelector("#clear").style.display = "inline";
     },
 
     clearApp() {
