@@ -88,7 +88,8 @@ const Enter = {
             if (e.key == 'Enter') {
                 e.preventDefault();
                 Tasks.add();
-                if (typeof localStorage.name == 'undefined') {
+                if ((typeof localStorage.name == 'undefined') && (document.getElementById('name').value != "")) {
+                    localStorage.name = document.getElementById('name').value;
                     getData.updateData();
                 }
 
